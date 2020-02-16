@@ -1,6 +1,11 @@
+@font-face{
+    font-family:monaco;
+    src:url(../assets/fonts/monaco.ttf);
+}
 *{
     box-sizing:border-box;
     margin:0px;
+    font-family:monaco;
 }
 nav{
     display:flex;
@@ -29,4 +34,7 @@ input[type='submit']{
 }
 a{
     color:#fff;
+}
+a:hover,input[type='submit']{
+    cursor:pointer;
 }

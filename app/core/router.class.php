@@ -24,10 +24,11 @@
                 if(array_key_exists($uri,$this->routes[$requestMethod])){
                     $this->shiftControl(...explode('@',$this->routes[$requestMethod][$uri]));
                 }else{
-                    throw new Exception("Something went wrong!");
+                    throw new Exception("Page not found!");
                 }
 
             }catch(Exception $e){
+                //die(var_dump($_POST));
                 die($e->getMessage());
             }
         }
