@@ -24,7 +24,7 @@
                 if(array_key_exists($uri,$this->routes[$requestMethod])){
                     $this->shiftControl(...explode('@',$this->routes[$requestMethod][$uri]));
                 }else{
-                    throw new Exception("Page not found!");
+                    //throw new Exception("Page not found!");
                 }
 
             }catch(Exception $e){

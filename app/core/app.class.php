@@ -12,7 +12,7 @@
                     throw new Exception("${key} does not exist");
                 }
             }catch(Exception $e){
-                die($e->getMessage());
+                return false;
             }
             return static::$registry[$key];
         }

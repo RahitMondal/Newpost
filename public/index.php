@@ -1,4 +1,6 @@
 <?php
+    session_start();
+
     require_once '../app/core/bootstrap.php';
     
     //var_dump($_SERVER);
@@ -8,5 +10,6 @@
     $pdoConn = App::get('conn');
     App::bind('dbUpdate',new Query($pdoConn));
     $dbUpdate = App::get('dbUpdate');
+    
 
     Router::load('../routes/routes.php')->direct(Request::getUri(),Request::getMethod());

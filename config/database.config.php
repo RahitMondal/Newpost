@@ -1,6 +1,6 @@
 <?php
     return [
-        'name' => 'newconn',
+        'name' => 'newpost',
         'connection' => 'mysql:host=localhost',
         'user' => 'root',
         'password' => '',

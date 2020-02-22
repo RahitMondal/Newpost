@@ -1,13 +1,13 @@
     <nav>
-        <logo>Newconn</logo>
-        <form name="search" action="">
-            <input type="text" placeholder="Search People">
-            <input type="submit" value="Search">
+        <logo>Newpost</logo>
+        <form>
+            <input id="search" type="text" placeholder="Search People">
+            <input type="button" value="Search">
         </form>
-        <a href="">Home</a>
-        <a href="">Friends</a>
-        <a href="">Edit Profile</a>
-        <form form="logout" action="">
+        <a id="following">Following</a>
+        <a id="followers">Followers</a>
+        <a href="/edit">Edit Profile</a>
+        <form action="/logout" method="post">
             <input type="submit" value="Logout">
         </form>
     </nav>
