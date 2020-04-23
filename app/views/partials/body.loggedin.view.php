@@ -9,9 +9,9 @@
     if($details['pic_name']) $pic_name=$details['pic_name'];
     else $pic_name = 'no_pic.gif';
 ?>
-<dropdown>
-</dropdown>
 <container>
+    <dropdown>
+    </dropdown>
     <det>
         <pic style="background-image:url(
             <?= "assets/profile_pics/{$pic_name}" ?>
@@ -76,4 +76,5 @@
 </container>
 
 <script src="javascripts/loggedin.js"></script>
+<script src="javascripts/main.js"></script>
 <!--<script src="javascripts/follow.js"></script>-->

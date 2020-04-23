@@ -24,12 +24,11 @@ textarea{
 dropdown{
     position:absolute;
     display:block;
-    margin-left:25%;
-    max-height:500px;
-    width:50%;
+    max-height:300px;
+    width:500px;
 }
 container{
-    margin-top:10px;
+    margin:0px;
     display:flex;
     width:100%;
     align-items:flex-start;
@@ -37,6 +36,7 @@ container{
 }
 det{
     display:flex;
+    margin-top:5px;
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:flex-start;
@@ -150,4 +150,7 @@ post > form > input[name="post-btn"]{
     border:solid 2px darkgoldenrod;
     width:300px;
     float:right;
+}
+a{
+    text-decoration:none;
 }

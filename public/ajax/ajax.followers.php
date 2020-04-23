@@ -7,10 +7,10 @@
         $stmt = $pdoConn->prepare(
             "select user_name,full_name,pic_name from members
             inner join followers on members.user_name=followers.follower
-            where followers.followed_person=?
+            where followers.followed_person=? and not followers.follower=?
             order by full_name"
         );
-        $stmt->execute([$user_name]);
+        $stmt->execute([$user_name,$user_name]);
         if($stmt->rowCount()){
             $html = '';
             $res = $stmt->fetchAll(PDO::FETCH_ASSOC);

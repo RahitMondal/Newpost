@@ -47,6 +47,7 @@ window.addEventListener('load',()=>{
         xhr.onreadystatechange = function(){
             if(this.readyState==4 && this.status==200 && this.responseText!=null){
                 dropdown.innerHTML = this.responseText;
+                dropdown.style.display = 'block';
                 let buttons = document.getElementsByClassName('follow');
                 for(let i=0 ; i<buttons.length ; i++){
                     buttons[i].addEventListener('click',()=>{
@@ -67,6 +68,7 @@ window.addEventListener('load',()=>{
         xhr.onreadystatechange = function(){
             if(this.readyState==4 && this.status==200 && this.responseText!=null){
                 dropdown.innerHTML = this.responseText;
+                dropdown.style.display = 'block';
                 let buttons = document.getElementsByClassName('unfollow');
                 for(let i=0 ; i<buttons.length ; i++){
                     buttons[i].addEventListener('click',()=>{
@@ -86,6 +88,7 @@ window.addEventListener('load',()=>{
         xhr.onreadystatechange = function(){
             if(this.readyState==4 && this.status==200 && this.responseText!=null){
                 dropdown.innerHTML = this.responseText;
+                dropdown.style.display = 'block';
                 let buttons = document.getElementsByClassName('follow');
                 for(let i=0 ; i<buttons.length ; i++){
                     buttons[i].addEventListener('click',()=>{

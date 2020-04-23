@@ -1,4 +1,4 @@
-window.addEventListener('load',()=>{
+/*window.addEventListener('load',()=>{
     let search = document.getElementById('search');
     search.addEventListener('input',()=>{
         let buttons = document.getElementsByClassName('follow');
@@ -6,7 +6,7 @@ window.addEventListener('load',()=>{
     })
     /*function run(){
         console.log('abc');
-    }*/
+    }
     function ajaxFollow(followedName){
         let xhr = new XMLHttpRequest();
         xhr.open('GET',`../ajax/ajax.search.php/?followedName=${followedName}`,true);
@@ -18,4 +18,4 @@ window.addEventListener('load',()=>{
         }
         xhr.send();
     }
-});
+});*/

@@ -4,14 +4,14 @@
     $pdoConn = Connection::make(require_once '../../config/database.config.php');
     $key = sanitize($_GET['key']);
     if($key!==''){
+        session_start();
+        $user_name = $_SESSION['user_name'];
         $stmt = $pdoConn->prepare(
             "select user_name,full_name,pic_name from members
-            where full_name like '{$key}%'"
+            where full_name like '{$key}%' and not user_name='{$user_name}'"
         );
         $stmt->execute();
         if($stmt->rowCount()){
-            session_start();
-            $user_name = $_SESSION['user_name'];
             $html = '';
             $res = $stmt->fetchAll(PDO::FETCH_ASSOC);
             foreach($res as $row){
